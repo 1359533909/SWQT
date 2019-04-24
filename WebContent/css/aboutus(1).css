@@ -1,0 +1,65 @@
+/* CSS Document */
+
+.head-pic{
+	width: 1200px;
+	height: 281px;
+	margin: 8px auto;
+	background: url(../images/aboutus/about_banner.png) no-repeat;
+}
+.head-pic-text{
+	font-size: 13px;
+	color: #474342;
+	width: 600px;
+	height: 180px;
+	line-height: 20px;
+	padding-top: 50px;
+	padding-left: 450px;
+}
+.head-pic-text p{
+	text-indent: 2em;
+}
+.body-top{
+	width: 900px;
+	height: 1115px;
+	margin: 8px auto; 
+}
+.body-top img{
+	width: 900px;
+	height: 1115px;
+}
+.body-middle{
+	width: 900px;
+	height: 450px;
+	margin: 8px auto; 
+	background-color: #ffffff;
+}
+.body-middle-l{
+	width: 461px;
+	height:450px;
+	background: url(../images/aboutus/intelligent20180104.png) no-repeat;
+	float: left;
+}
+.body-middle-r{
+	padding-top: 140px;
+	line-height: 27px;
+}
+.body-middle-r dt{
+	color: #35a7de;
+	font:bold 21px "微软雅黑";
+}
+.body-middle-r p{
+	padding-left:490px; 
+}
+.body-middle-r-pic{
+	width: 21px;
+	height: 20px;
+	float: left;
+	background:url(../images/aboutus/star.png) no-repeat;
+}
+
+.body-foot-l{
+	width: 461px;
+	height:450px;
+	background: url(../images/aboutus/honour.png) no-repeat;
+	float: left;
+}

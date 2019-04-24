@@ -1,0 +1,83 @@
+.head-pic{
+	width: 1200px;
+	margin: 10px auto;
+}
+.body-order{
+	width: 1200px;
+	height: 50px;
+	background-color: #ffffff;
+	margin: 10px auto;
+	text-align: center;
+	line-height: 50px;
+}
+.body-order-text{
+	color: #3d3d3d;
+	font-size: 22px;
+	font-weight: bold;
+	font-family: '微软雅黑';
+}
+.body-inner{
+	width: 600px;
+	height: 150px;
+	background-color: #eeeeee;
+	margin: 10px auto;
+}
+.body-inner-frame{
+	border-left: 2px solid #cccccc;
+	border-top: 2px solid #cccccc;
+	overflow: hidden;
+}
+.body-inner-frame li{
+	float: left;
+	width: 197px;
+	height: 149px;
+	border-right: 2px solid #cccccc;
+	border-bottom: 2px solid #cccccc;
+	cursor: pointer;
+}
+.body-inner-frame li.current{
+	border-bottom: 2px solid #ffffff;
+	background-color: #ffffff;
+}
+.body-inner div{
+	width: 595px;
+	height: 500px;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	border-left: 2px solid #cccccc;
+	border-right: 2px solid #cccccc;
+	border-bottom: 2px solid #cccccc;
+	display: none;
+	/*text-align: center;*/
+}
+h1{
+	text-align: center;
+	font-size: 33px;
+	color: #e5be95;
+	font-weight: bold;
+}
+.body-inner div.current{
+	display: block;
+}
+.person_message{
+	color: #ff5600;
+	font-size: 23px;
+	border: 1px dotted #999999;
+	display: block;
+	margin: 9px;
+}
+.person_message p{
+	padding-bottom: 10px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+table{
+	width: 100%;
+	/*将table固定住*/
+	table-layout: fixed;
+	text-align: center;
+}
+table tr td{
+	/*进行换行处理*/
+	word-wrap:break-word;
+}

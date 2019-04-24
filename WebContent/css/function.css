@@ -1,0 +1,116 @@
+/* CSS Document */
+.body-p{
+	width: 100%;
+}
+.body-pic{
+	width: 1200px;
+	height: 248px;
+	background: url(../images/function/C3.png) no-repeat;
+	margin: 3px auto 0;
+}
+.body-list{
+	width:1000px;
+	height: 100px;
+	margin: 1px auto 0;
+}
+.body-list ul li{
+	float: left;
+}
+.list-all{
+	width: 320px;
+	height: 118px;
+	margin-right: 10px;
+	margin-top: 5px;
+	background-color: #ffffff;
+}
+.list-1{
+	width: 75px;
+	height: 78px;
+	margin: 5px auto 0;
+	background: url(../images/pic-1.png) no-repeat;
+}
+.list-text{
+	text-align: center;
+	padding-top: 5px;
+	color: #64bbe6;
+	font: bold 18px "微软雅黑";
+}
+.list-2{
+	width: 73px;
+	height: 86px;
+	margin: 5px auto 0;
+	background: url(../images/pic-2.png) no-repeat;
+}
+.list-3{
+	width: 82px;
+	height: 82px;
+	margin: 5px auto 0;
+	background: url(../images/pic-3.png) no-repeat;
+}
+.body-jh{
+	width: 1000px;
+	margin: 30px auto 0;
+}
+.body-jh-bg{
+	width: 980px;
+	height: 416px;
+	background: url(../images/function/C3_1.png) no-repeat;
+}
+.body-jh-bg-text{
+	padding-top:170px;
+	padding-left: 480px;
+}
+.body-jh-bg h2{
+	color: #35a7de;
+	font:bold 33px "微软雅黑";
+}
+.body-jh-bg p{
+	color: #474342;
+	font-size: 20px;
+}
+.body-huiyuan{
+	width: 1000px;
+	margin: 30px auto 0;
+}
+.body-huiyuan-bg{
+	width: 980px;
+	height: 416px;
+	background: url(../images/function/C3_2.png) no-repeat;
+}
+.body-huiyuan-bg-text{
+	padding-top: 170px;
+	padding-left: 40px;
+	line-height: 30px;
+}
+.body-huiyuan-bg-text h2{
+	color: #35a7de;
+	font:bold 33px "微软雅黑";
+}
+.body-huiyuan-bg-text p{
+	color: #474342;
+	font-size: 22px;
+}
+
+
+.body-pay{
+	width: 1000px;
+	margin: 30px auto 0;
+}
+.body-pay-bg{
+	width: 980px;
+	height: 416px;
+	background: url(../images/function/C3_3.png) no-repeat;
+}
+.body-pay-bg-text{
+	padding-top:170px;
+	padding-left: 480px;
+	line-height: 30px;
+}
+.body-pay-bg-text h2{
+	color: #35a7de;
+	font:bold 33px "微软雅黑";
+}
+.body-pay-bg-text p{
+	color: #474342;
+	font-size: 22px;
+}

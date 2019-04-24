@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="cn.mxl.dao.CommodityMapper">
+   <select id="selectCommodityByUserName" parameterType="String" resultType="cn.mxl.pojo.Commodity">
+       SELECT * FROM commodity WHERE username=#{username}
+   </select>
+   <delete id="deleteCommodityById" parameterType="String">
+     DELETE FROM commodity WHERE commodity_id=#{commodity_id}
+   </delete>
+   
+   <update id="updateCommodityAndLogisticsById" parameterType="String">
+     UPDATE commodity a,logistics  b 
+     SET a.acceptance="已验收",b.acceptance="已验收" 
+     WHERE 
+     a.commodity_id=#{commodity_id}
+     AND 
+     b.commodity_id=#{commodity_id}
+   </update>
+ </mapper>

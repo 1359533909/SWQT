@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="cn.mxl.dao.WorkerCarMapper">
+   <select id="selectWorkerCarByQueryCar" parameterType="cn.mxl.pojo.QueryCar" resultType="cn.mxl.pojo.QueryCar">
+     SELECT  
+     a.`id`,a.`worker_id`,a.`worker_name`,a.`car_number`,a.`mobile_phone`,a.`department`,b.`car_type` 
+     FROM worker a LEFT JOIN transportcar b ON a.`car_number`=b.`carnumber`
+	 <where>
+	   <if test="worker_id!=null and worker_id!=''">
+	   	a.`worker_id`=#{worker_id}
+	   </if>
+	   <if test="car_number!=null and car_number!=''">
+	   	and a.`car_number`=#{car_number}
+	   </if>
+	   <if test="worker_name!=null and worker_name!=''">
+	    and a.`worker_name`=#{worker_name}
+	   </if>
+	   <if test="cust_company!=null and cust_company!=''">
+	    AND a.`company_name`=#{cust_company}
+	   </if>
+	 </where>
+   </select>
+   <select id="selectWorkerCarById" parameterType="int" resultType="cn.mxl.pojo.QueryCar">
+      SELECT * FROM worker a LEFT JOIN transportcar b ON a.`car_number`=b.`carnumber` WHERE a.`id`=#{id}
+   </select>
+   <update id="updateWorkerByCar" parameterType="cn.mxl.pojo.QueryCar">
+     UPDATE worker a SET a.`worker_id`=#{worker_id},a.`worker_name`=#{worker_name}, a.`department`=#{department},a.`mobile_phone`=#{mobile_phone}
+WHERE a.`id`=#{id}
+   </update>
+   <update id="updateCarByCar" parameterType="cn.mxl.pojo.QueryCar">
+     UPDATE transportcar a SET a.`car_type`=#{car_type}
+WHERE a.`carnumber`=#{car_number}
+   </update>
+   <delete id="deleteWorkerById" parameterType="int">
+     DELETE  FROM worker  WHERE id=#{id}
+   </delete>
+ </mapper>

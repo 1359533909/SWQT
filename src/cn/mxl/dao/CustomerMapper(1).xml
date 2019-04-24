@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="cn.mxl.dao.CustomerMapper">
+   <select id="selectCustomerByAccountAndPassword" parameterType="cn.mxl.pojo.QueryVo" resultType="cn.mxl.pojo.Customer">
+      SELECT * FROM customer WHERE account =#{account} AND PASSWORD=#{password}
+   </select>
+   <insert id="insertCustomer" parameterType="cn.mxl.pojo.Customer">
+   INSERT INTO 
+   customer(account,password,cust_name,cust_type,cust_mobile,cust_address,cust_company)
+   VALUE (#{account},#{password},#{cust_name},#{cust_type},#{cust_mobile},#{cust_address},#{cust_company})
+   </insert>
+   <select id="selectCustomer" parameterType="cn.mxl.pojo.Customer" resultType="cn.mxl.pojo.Customer">
+      SELECT * FROM customer a 
+      <where>
+        <if test="cust_name != null and cust_name != ''">
+         	a.`cust_name` LIKE '%${cust_name}%'
+        </if>
+        <if test="account != null and account != ''">
+        	AND a.`account` LIKE '%${account}%'
+        </if>
+        <if test="cust_type!=null and cust_type != ''">
+        	AND a.`cust_type`=#{cust_type}
+        </if>
+        <if test="cust_company != null and cust_company!=''">
+        	 AND a.`cust_company`=#{cust_company}
+        </if>
+      </where>
+   </select>
+   <select id="selectCustomerById" parameterType="int" resultType="cn.mxl.pojo.Customer">
+     select * from customer where cust_id =#{id}
+   </select>
+   <update id="updateCustomer" parameterType="cn.mxl.pojo.Customer">
+ 	UPDATE  customer a 
+  	SET a.`account`=#{account},a.`cust_name`=#{cust_name},
+	a.`cust_type`=#{cust_type},a.`cust_company`=#{cust_company},
+	a.`password`=#{password},a.`cust_address`=#{cust_address}
+	WHERE a.`cust_id`=#{cust_id}
+   </update>
+   <delete id="deleteCustomerById" parameterType="int">
+   	 DELETE FROM customer WHERE cust_id=#{id}
+   </delete>
+ </mapper>

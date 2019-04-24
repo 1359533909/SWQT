@@ -1,0 +1,95 @@
+.head-pic{
+	width: 1200px;
+	margin: 10px auto;
+}
+.actived{
+	text-align: center;
+	font-size: 33px;
+	font-weight:bold;
+	margin-top: 30px;
+	display: block;
+}
+.Aline{
+	width: 1262px;
+	border-bottom: 1px solid #ccc;
+	margin:1px auto;
+}
+.news{
+	width: 1262px;
+	margin:1px auto;
+}
+.news-left{
+	width: 629px;
+	height: 300px;
+	border: 1px solid #ccc; 
+	margin-top: 50px;
+	float: left;
+}
+.news-left-frame{
+	width: 630px;
+	border-bottom:1px solid #ccc; 
+	margin-top: 30px;
+}
+.news-left-frame span{
+	font-size: 22px;
+	width: 92px;
+	height: 25px;
+	background-color: #70bbe9;
+	color: #ffffff;
+	text-align: center;
+	line-height: 25px;
+	margin-left: 46px;
+	display: block;
+}
+.news-left-list{
+	font-size: 18px;
+	margin-left: 55px;
+	margin-top: 20px;
+	line-height: 28px;
+}
+
+
+.news-right{
+	float: right;
+	width: 629px;
+	height: 300px;
+	border: 1px solid #ccc; 
+	margin-top: 50px;
+	position: relative;
+}
+.news-right-frame{
+	width: 630px;
+	border-bottom:1px solid #ccc; 
+	margin-top: 30px;
+}
+.news-right-frame span{
+	font-size: 22px;
+	width: 92px;
+	height: 25px;
+	background-color: #70bbe9;
+	color: #ffffff;
+	text-align: center;
+	line-height: 25px;
+	margin-left: 46px;
+	display: block;
+}
+.news-only{
+	width: 629px;
+	height: 238px;
+	overflow: hidden;
+	position: relative;
+}
+.news-pic{
+	position: absolute;
+	top:1px;
+}
+.news-pic li{
+	float: left;
+	width: 284px;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+.foot{
+	overflow: hidden;
+	/*清除上面盒子的浮动效果*/
+}

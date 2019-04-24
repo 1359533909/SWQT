@@ -1,0 +1,61 @@
+.bodyLogin{
+	height: 300px;
+	background: url(../images/user_register.jpg) no-repeat;
+	background-size:cover;
+	margin:10px auto;
+	overflow: hidden;
+}
+.login{
+	width: 300px;
+	/*height: 280px;*/
+	background-color: #e5e5e5;
+	float: right;
+	margin: 6px 210px 22px auto;
+	text-align: center;
+}
+input{
+	cursor: pointer;
+}
+.login .user_login{
+	padding-top: 10px;
+	color: #0d92fc;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	font-weight:bold;
+}
+.login .text{
+	width: 300px;
+	height: 15px;
+	background: url(../images/line.png) no-repeat;
+	margin-top: 10px;
+}
+.login .user{
+	width: 200px;
+	height: 24px;
+	line-height: 19px;
+	margin:6px auto;
+}
+/*取消了input的默认效果*/
+.login .user input{
+	height: 20px;
+	line-height: 20px;
+	width: 140px;
+	padding:0 5px;
+	border:2px solid #ececec;
+	float: right;
+}
+.login .user span{
+	width: 46px;
+	height: 22px;
+	line-height: 22px;
+	display: block;
+	float: left;
+}
+.user_submit{
+	width: 100px;
+	margin:3px auto;
+}
+.user select{
+	text-align: center;
+	/*direction: rtl;*/
+}

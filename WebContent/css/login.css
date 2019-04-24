@@ -1,0 +1,55 @@
+.bodyLogin{
+	width: 1200px;
+	height: 248px;
+	background: url(../images/login.jpg) no-repeat;
+	margin:10px auto;
+}
+.login{
+	width: 300px;
+	height: 186px;
+	background-color: #ffffff;
+	float: left;
+	margin: 31px auto 31px 210px;
+	text-align: center;
+}
+.login .user_login{
+	padding-top: 20px;
+	color: #0d92fc;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	font-weight:bold;
+}
+.login .text{
+	width: 300px;
+	height: 15px;
+	background: url(../images/line.png) no-repeat;
+	margin-top: 10px;
+}
+.login .user{
+	width: 200px;
+	height: 24px;
+	line-height: 19px;
+	margin:10px auto;
+}
+/*取消了input的默认效果*/
+.login .user input{
+	height: 20px;
+	line-height: 20px;
+	width: 140px;
+	padding:0 5px;
+	border:2px solid #ececec;
+	float: right;
+}
+.login .user span{
+	width: 46px;
+	height: 22px;
+	line-height: 22px;
+	display: block;
+	float: left;
+}
+.user_submit{
+	width: 100px;
+	margin:10px auto;
+}
+
+
